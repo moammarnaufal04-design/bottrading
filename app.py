@@ -199,7 +199,8 @@ with col1:
     if dry_run_status.lower() == 'true':
         st.warning("⚠️ Bot berjalan dalam mode SIMULASI (Dry Run: True). Uang asli Anda aman.")
     else:
-        st.danger("🔥 Bot berjalan dalam mode ASLI (Dry Run: False). Transaksi riil aktif.")
+        st.error("🔥 Bot berjalan dalam mode ASLI (Dry Run: False). Transaksi riil aktif.")
+
 
     # Tombol Manual Trigger
     if st.button("Jalankan Cek Pasar Sekarang"):
